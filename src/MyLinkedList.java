@@ -13,7 +13,7 @@ public class MyLinkedList <T>{
             last = temp;
         }else{
             //point new node to last
-            temp.setNext(last);
+            last.setNext(temp);
             last = temp;
         }
     }
@@ -41,12 +41,6 @@ public class MyLinkedList <T>{
     public String toString(){
         MyListNode<T> current = first;
         String out = "";
-        while(current != null){
-            out += current.getData() + "->";
-            current = current.getNext();
-            System.out.println(out);
-        }
-        current = last;
         while(current != null){
             out += current.getData() + "->";
             current = current.getNext();

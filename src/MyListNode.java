@@ -12,8 +12,8 @@ public class MyListNode<T> {
         return data;
     }
 
-    public void setData(){
-        this.data=data;
+    public void setData(T data){
+        this.data= data;
     }
     public MyListNode<T> getNext(){
         return next;
